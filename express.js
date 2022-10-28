@@ -8,10 +8,6 @@ const port = process.env.PORT || 8080;
 app.use(bodyparser.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send(`<h1>Test<h1>`);
-});
-
 // STEP 2: Create a GET api that returns query param, path param and return both values with info as json
 
 app.get("/users/:id", (req, res) => {
