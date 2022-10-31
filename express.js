@@ -1,11 +1,11 @@
 const express = require("express");
 const path = require("path");
-var bodyparser = require("body-parser");
+
 const app = express();
 const port = process.env.PORT || 8080;
-// app.use(bodyparser.json());
 
-app.use(bodyparser.urlencoded({ extended: false }));
+
+
 app.use(express.json());
 
 // STEP 2: Create a GET api that returns query param, path param and return both values with info as json
